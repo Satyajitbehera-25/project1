@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: aliceblue;
+
+}
+body{
+    background-image: url(amz back.jpg);
+    
+}
+.navbar{
+    height: 60px;
+    background-color: #131921;
+    gap: auto;
+    
+}
+.search btn{
+    background-color: #febd69;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+a{
+    margin-right: 120x;
+}
+.ama{
+    color: orangered;
+    font-size: 25px;
+    text-align: none;
+
+}
+.navbar input{
+    flex: 1;
+    padding: 7px;
+    border: none;
+}
+
+.navbar2{
+    background-color: rgb(45, 43, 43);
+    height: 50px;
+    text-align: center;
+    box-shadow: 5px 5px 5px 5px rgb(0, 0, 0 ,0);
+}
+a{
+    margin-right: 45px;
+    padding-top: 20px;
+}
+.navbar3{
+    color: black;
+}
+    col
+]
