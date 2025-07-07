@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    position: sticky;
+    border:rgb(19, 3, 3) solid 1px ;
+    height: 30px;
+    text-align: center;
+    font-size: x-small;
+    padding-top: 10px;
+   
+    
+}
+button{
+    border-radius: 20px;
+    color: white;
+    height:40px px;
+    width:90px;
+    background-color: black;
+    font-size: x-small;
+}
+.navbarX{
+    height: 40px;
+   
+    border: solid black 1px;
+    display: flex;
+    justify-content:space-between;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.navbarX img{
+    height: 30px;width: 30px;
+ }   
+    
+.kfc img{
+   height: 40px;
+   width: 40px;
+
+}
+.logo img{
+    height: 40px;
+   width: 40px;
+
+}
+.logo1 img{
+    height: 30px;
+    width: 60px;
+}
+h6{
+    text-align: center;
+    color: white;
+    background-color: black;
+    height: 40px;
+    font-size:8px;
+    padding-top: 10px;
+}
+.EE{
+    background-color: rgb(204, 31, 31);
+    height:25px;
+    width: 75px;
+    border-radius: 20PX;
+}
+.content{
+    display: flex;
+    margin: 40px;
+}
+        .re{
+            height: 350px;
+            width: 50%;
+            background-color:rgb(255, 255, 255);
+            padding-left: 20PX;
+        }
+    
+        
+        .er{
+            height:10% ;
+            background-color: rgb(255, 255, 255);
+            margin-left: 40px;
+            text-align: center;
+        }
+        .tr{
+            height: 80%; ;
+            background-image: url(no5.jpg);
+            background-size: cover;
+            margin-left: 40px;
+    }
+        .ye{
+            height:10% ;
+            margin-left: 40px;
+            background-color: blanchedalmond;
+            text-align: center;
+        }
+         .we {
+            background-color: bisque;
+            height: 150px;
+            width: 200px;
+            margin: 20px;
+            background-image: url(no4.jpg);
+            background-size: cover;
+        }
+        .wi{
+            background-color: bisque;
+            height: 170px;
+            width: 200px;
+            margin: 20px;
+            background-image: url(yy.jpg);
+            background-size: cover;
+        }
+        .ree{
+            margin: 20px;
+            height: 300px;
+
+        }
+        .row{
+           background-color: bisque;
+            height: 150px;
+            width: 200px;
+            background-image: url(no1.jpg);
+            background-size: cover;
+
+            
+        }
+        
+        .rtt {
+            background-color: bisque;
+           height: 170px;
+            width: 200px;
+            margin: 20px 0px 20px 0px;
+            background-image: url(no2.jpg);
+            background-size: cover;
+        }
+    .demo{
+            display: flex;
+        }
+        .aa,.cc,.ee,.gg{
+            
+            height: 150px;
+            width: 240px;
+            margin: 0px 10px 0px 10px;
+            margin-left: 50px;
+     }
+        .bb,.dd,.ff,.ii{
+            height: 40px;
+            width: 240px;
+            margin: 0px 0px 10px 10px;
+            text-align: center;
+            font-weight:bold;
+            padding-top: 15px;
+             margin-left: 50px;
+        }
+        .aa{
+            background-image:url(no6.jpg);
+            background-size: cover;
+        }
+        .aa:hover{
+            
+            transform: scale(1.1);
+            transition: 1s;
+
+        }
+        .cc{
+           background-image:url(no7.jpg);
+            background-size: cover; 
+            
+        }
+        .ee{
+            background-image:url(no11.jpg);
+            background-size: cover;
+        }
+        .gg{
+            background-image:url(no8.jpg);
+            background-size: cover;
+        }
+    
+        .button{
+            display: flex;
+            background-color: rgb(32, 33, 36);
+            color: rgb(255,255,255);
+             text-align: center;
+            
+        }
+        .fotoor{
+            height: 250px;
+            width:30% ;
+            
+         }
+        .fotoor{
+           height: 250px;
+            width: 6.6%;
+            font-size: 10px;
+            line-height: 2;
+            padding-top:55px ; 
+            text-align: left;
+        }
+        .fot{
+            height: 250px;
+            width: 550px;
+            text-align: center;
+        }
+         .fot img{
+            height: 40px;
+            width: 40px;
+            padding-top: 60px;
+            padding-left: 250px;
+            padding-right: 10px;
+        }
+        .toor{
+            height: 250px;
+            width: 30%;
+        
+            text-align: center;
+        }
+        .orr{
+            height: 250px;
+            width: 1S6%;
+           
+        }
+         
