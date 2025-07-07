@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #131921;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  .nav-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 100px;
+    margin-right: 15px;
+  }
+  
+  .location .line1 {
+    margin: 0;
+    font-size: 12px;
+  }
+  
+  .location .update {
+    color: #00a8e1;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  .nav-search {
+    flex: 1;
+    display: flex;
+    margin: 0 20px;
+  }
+  
+  .search-category {
+    padding: 5px;
+  }
+  
+  .nav-search input {
+    flex: 1;
+    padding: 7px;
+    border: none;
+  }
+  
+  .search-btn {
+    background-color: #febd69;
+    border: none;
+    padding: 7px 15px;
+    cursor: pointer;
+  }
+  
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+  }
+  
+  .nav-right div {
+    text-align: center;
+  }
+  
+  .cart {
+    font-size: 20px;
+  }
+  
+  .subnav {
+    display: flex;
+    background-color: #232f3e;
+    padding: 10px 20px;
+    overflow-x: auto;
+  }
+  
+  .subnav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    white-space: nowrap;
+    font-size: 14px;
+  }
+  
