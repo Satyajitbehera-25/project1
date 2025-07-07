@@ -1,0 +1,16 @@
+<script type="text/javascript">
+    let arr1 =  [1,2,3,4,2,3,4];
+    let arr2 =  [1,2,3];
+
+
+	console.log(arr1.concat(arr2));//merge 2 array
+	console.log(arr1.indexOf(2));//1
+	console.log(arr1.lastIndexOf(4));//6
+	console.log(arr1.includes(3));//false
+	console.log(arr1.join('=>'));//1=>2=>3=>4=>2=>3=>4
+
+	console.log(arr2.map( num => num * 3 ))// [3,6,9]
+	console.log(arr2.filter(num => num % 2 === 0)); //[2]
+	console.log(arr2.reduce((a,b) => a+b,0 ))//6
+	//->1 + 2 + 3
+</script>
