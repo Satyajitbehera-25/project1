@@ -1,0 +1,19 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    color: white;
+}
+.navbar{
+    background-color: black;
+    height: 60px;
+}
+button{
+    background-color: orange;
+}
+.ama{
+    color: orange;
+    font-size:25px ;
+}
+a{
+    margin-right: 200px;
+}
