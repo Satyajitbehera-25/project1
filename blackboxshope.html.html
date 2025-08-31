@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Élégance | Luxury Dress Boutique</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --cream: #F8F4E9;
+            --charcoal: #2C2C2C;
+            --taupe: #A89F91;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #F8F4E9;
+            color: #2C2C2C;
+        }
+        
+        .playfair-display {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .cormorant {
+            font-family: 'Cormorant Garamond', serif;
+        }
+        
+        .gold-border {
+            border-color: #D4AF37;
+        }
+        
+        .gold-text {
+            color: #D4AF37;
+        }
+        
+        .cream-bg {
+            background-color: #F8F4E9;
+        }
+        
+        .charcoal-bg {
+            background-color: #2C2C2C;
+        }
+        
+        .hover-gold:hover {
+            color: #D4AF37;
+            transition: color 0.3s ease;
+        }
+        
+        .product-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .luxury-border {
+            border: 2px solid #D4AF37;
+        }
+        
+        .gradient-overlay {
+            background: linear-gradient(180deg, rgba(44,44,44,0.7) 0%, rgba(44,44,44,0.9) 100%);
+        }
+        .back{
+            height: 782.4px;
+            width: 100%;
+            position: absolute;
+            object-fit: cover;
+            
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white bg-opacity-95 backdrop-blur-sm z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl playfair-display font-semibold gold-text">ÉLÉGANCE</div>
+                
+                <div class="hidden md:flex space-x-10">
+                    <a href="#" class="hover-gold font-medium">Collections</a>
+                    <a href="#" class="hover-gold font-medium">Bridal</a>
+                    <a href="#" class="hover-gold font-medium">Evening</a>
+                    <a href="#" class="hover-gold font-medium">Couture</a>
+                    <a href="#" class="hover-gold font-medium">Appointments</a>
+                </div>
+                
+                <div class="flex items-center space-x-6">
+                    <a href="#" class="hover-gold">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="hover-gold">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="hover-gold">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </a>
+                </div>
+                
+                <button class="md:hidden">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center">
+        <div class="absolute inset-0">
+            <!-- <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/60b54d35-6145-42d4-80be-4567286b9b89.png" alt="Elegant woman in a flowing silk evening gown standing in a grand ballroom with crystal chandeliers and marble floors" class="w-full h-full object-cover"> -->
+             <video autoplay loop muted play-inline class="back">
+        <source src="https://resource.flexclip.com/templates/video/720p/blue-particle-glow-technology-intro-logo.mp4" type="video/mp4">
+    </video>
+            <div class="absolute inset-0 gradient-overlay"></div>
+        </div>
+        
+        <div class="relative z-10 text-center text-white px-6">
+            <h1 class="playfair-display text-5xl md:text-7xl font-light mb-6">Where Elegance Meets Excellence</h1>
+            <p class="cormorant text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Experience the pinnacle of haute couture craftsmanship and timeless sophistication</p>
+            <div class="space-x-6">
+                <button class="luxury-border bg-white text-charcoal px-8 py-3 hover:bg-charcoal hover:text-white transition-colors duration-300 font-medium">
+                    View Collection
+                </button>
+                <button class="border border-white px-8 py-3 hover:bg-white hover:text-charcoal transition-colors duration-300 font-medium">
+                    Book Appointment
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Collections -->
+    <section class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="playfair-display text-4xl mb-4">Signature Collections</h2>
+                <p class="cormorant text-xl text-gray-600 max-w-2xl mx-auto">Curated ensembles that redefine luxury and sophistication</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Collection 1 -->
+                <div class="group relative overflow-hidden rounded-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/80d4db94-41f7-4704-938b-fe514a130b28.png" alt="Evening gown collection featuring silk and satin dresses with intricate beading and embroidery in a luxury boutique setting" class="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-end p-6">
+                        <div>
+                            <h3 class="playfair-display text-2xl text-white mb-2">Evening Elegance</h3>
+                            <p class="text-white text-sm">Timeless gowns for the most memorable nights</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Collection 2 -->
+                <div class="group relative overflow-hidden rounded-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/af7e3ff7-0007-44f7-9f47-7f5fb3423f17.png" alt="Bridal collection showcasing exquisite wedding dresses with lace details and cathedral trains in an elegant studio" class="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-end p-6">
+                        <div>
+                            <h3 class="playfair-display text-2xl text-white mb-2">Bridal Couture</h3>
+                            <p class="text-white text-sm">Dream dresses for your perfect day</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Collection 3 -->
+                <div class="group relative overflow-hidden rounded-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a571726e-9deb-4d5c-b194-571fe1391639.png" alt="Cocktail dress collection featuring sophisticated designs with silk fabrics and elegant accessories in a high-end showroom" class="w-full h-96 object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-end p-6">
+                        <div>
+                            <h3 class="playfair-display text-2xl text-white mb-2">Cocktail Hour</h3>
+                            <p class="text-white text-sm">Sophisticated styles for every occasion</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="py-20 px-6 charcoal-bg">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="playfair-display text-4xl text-white mb-4">Featured Creations</h2>
+                <p class="cormorant text-xl text-gray-300">Exclusive designs crafted with unparalleled attention to detail</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Product 1 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden">
+                    <div class="relative overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3a73439d-74e7-4347-9608-b8a0a79dc0fd.png" alt="Silk chiffon evening gown with hand-sewn crystal beading and flowing train in champagne gold" class="w-full h-80 object-cover">
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-gold text-white px-3 py-1 text-sm rounded-full">New</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="playfair-display text-xl mb-2">Aurora Gown</h3>
+                        <p class="text-gray-600 text-sm mb-4">Silk Chiffon with Crystal Beading</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl gold-text font-light">$3,850</span>
+                            <button class="text-sm border border-charcoal px-4 py-2 hover:bg-charcoal hover:text-white transition-colors">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden">
+                    <div class="relative overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e096f80b-8229-4e83-8b74-8f1cdfa8c723.png" alt="Ivory lace wedding dress with French embroidery and cathedral length veil in a romantic design" class="w-full h-80 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="playfair-display text-xl mb-2">Seraphina Bridal</h3>
+                        <p class="text-gray-600 text-sm mb-4">French Lace with Silk Underlay</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl gold-text font-light">$5,200</span>
+                            <button class="text-sm border border-charcoal px-4 py-2 hover:bg-charcoal hover:text-white transition-colors">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden">
+                    <div class="relative overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/27d96b95-27b7-4030-a9ff-966e782885d1.png" alt="Emerald green silk cocktail dress with asymmetric neckline and draped details for evening events" class="w-full h-80 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="playfair-display text-xl mb-2">Jade Cocktail</h3>
+                        <p class="text-gray-600 text-sm mb-4">Pure Silk with Draped Details</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl gold-text font-light">$2,150</span>
+                            <button class="text-sm border border-charcoal px-4 py-2 hover:bg-charcoal hover:text-white transition-colors">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden">
+                    <div class="relative overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7780b25c-9d11-4ba6-8c29-94404375ac11.png" alt="Black velvet opera coat with gold embroidery and silk lining for formal winter occasions" class="w-full h-80 object-cover">
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-charcoal text-white px-3 py-1 text-sm rounded-full">Limited</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="playfair-display text-xl mb-2">Nocturne Cape</h3>
+                        <p class="text-gray-600 text-sm mb-4">Velvet with Gold Embroidery</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl gold-text font-light">$4,500</span>
+                            <button class="text-sm border border-charcoal px-4 py-2 hover:bg-charcoal hover:text-white transition-colors">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bespoke Services -->
+    <section class="py-20 px-6 cream-bg">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="playfair-display text-4xl mb-6">Bespoke Couture Experience</h2>
+                    <p class="cormorant text-xl text-gray-700 mb-8">
+                        Our master artisans create one-of-a-kind pieces tailored exclusively for you. 
+                        From initial consultation to final fitting, experience the art of true couture.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="gold-text mr-4 text-2xl">✓</div>
+                            <div>
+                                <h4 class="font-semibold mb-2">Personal Consultation</h4>
+                                <p class="text-gray-600">Private appointments with our design experts</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="gold-text mr-4 text-2xl">✓</div>
+                            <div>
+                                <h4 class="font-semibold mb-2">Custom Design</h4>
+                                <p class="text-gray-600">Create your dream dress from scratch</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="gold-text mr-4 text-2xl">✓</div>
+                            <div>
+                                <h4 class="font-semibold mb-2">Premium Fabrics</h4>
+                                <p class="text-gray-600">World's finest silks, laces, and materials</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="mt-8 luxury-border bg-charcoal text-white px-8 py-3 hover:bg-white hover:text-charcoal transition-colors duration-300">
+                        Begin Your Journey
+                    </button>
+                </div>
+                
+                <div class="relative">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b9bbd1e5-5ef7-401e-b538-b8866a0e6312.png" alt="Master tailor working on a custom dress in an atelier with luxurious fabrics and sewing tools" class="rounded-lg shadow-xl">
+                    <div class="absolute -bottom-6 -left-6 w-48 h-48 bg-gold rounded-lg flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <div class="playfair-display text-4xl">150+</div>
+                            <div class="text-sm">Hours of Craftsmanship</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="playfair-display text-4xl mb-4">Client Testimonials</h2>
+                <p class="cormorant text-xl text-gray-600">What our discerning clients say about their Élégance experience</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-8 rounded-lg shadow-lg">
+                    <div class="text-5xl gold-text mb-4">"</div>
+                    <p class="cormorant text-lg text-gray-700 mb-6">
+                        The attention to detail and craftsmanship exceeded all expectations. 
+                        My wedding dress was absolutely perfect.
+                    </p>
+                    <div>
+                        <div class="playfair-display text-lg">Sophia R.</div>
+                        <div class="text-sm text-gray-500">Bridal Client</div>
+                    </div>
+                </div>
+                
+                <div class="text-center p-8 rounded-lg shadow-lg">
+                    <div class="text-5xl gold-text mb-4">"</div>
+                    <p class="cormorant text-lg text-gray-700 mb-6">
+                        Wearing an Élégance creation makes you feel like royalty. 
+                        The quality and fit are unparalleled.
+                    </p>
+                    <div>
+                        <div class="playfair-display text-lg">Isabella M.</div>
+                        <div class="text-sm text-gray-500">Evening Wear Client</div>
+                    </div>
+                </div>
+                
+                <div class="text-center p-8 rounded-lg shadow-lg">
+                    <div class="text-5xl gold-text mb-4">"</div>
+                    <p class="cormorant text-lg text-gray-700 mb-6">
+                        The bespoke service was worth every penny. 
+                        I've never felt more beautiful or confident in any other dress.
+                    </p>
+                    <div>
+                        <div class="playfair-display text-lg">Charlotte D.</div>
+                        <div class="text-sm text-gray-500">Couture Client</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="charcoal-bg text-white py-16 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div>
+                    <div class="playfair-display text-2xl gold-text mb-6">ÉLÉGANCE</div>
+                    <p class="text-gray-400 mb-6">
+                        Creating timeless elegance through exceptional craftsmanship and unparalleled service.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover-gold">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="hover-gold">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="playfair-display text-lg gold-text mb-6">Collections</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="hover-gold">Bridal Couture</a></li>
+                        <li><a href="#" class="hover-gold">Evening Gowns</a></li>
+                        <li><a href="#" class="hover-gold">Cocktail Dresses</a></li>
+                        <li><a href="#" class="hover-gold">Bespoke Services</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="playfair-display text-lg gold-text mb-6">Services</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="hover-gold">Private Appointments</a></li>
+                        <li><a href="#" class="hover-gold">Custom Design</a></li>
+                        <li><a href="#" class="hover-gold">Alterations</a></li>
+                        <li><a href="#" class="hover-gold">Style Consultation</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="playfair-display text-lg gold-text mb-6">Contact</h3>
+                    <div class="space-y-3">
+                        <p>123 Luxury Avenue<br>New York, NY 10001</p>
+                        <p>By Appointment Only</p>
+                        <p>info@elegance.com<br>+1 (212) 555-0100</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>© 2024 Élégance Luxury Dress Boutique. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple JavaScript for interactive elements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Product card hover effect enhancement
+            const productCards = document.querySelectorAll('.product-card');
+            productCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-8px)';
+                    this.style.boxShadow = '0 25px 50px rgba(0,0,0,0.15)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                    this.style.boxShadow = '0 10px 30px rgba(0,0,0,0.1)';
+                });
+            });
+            
+            // Navigation scroll effect
+            let lastScrollTop = 0;
+            const navbar = document.querySelector('nav');
+            
+            window.addEventListener('scroll', function() {
+                let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                if (scrollTop > lastScrollTop && scrollTop > 100) {
+                    navbar.style.transform = 'translateY(-100%)';
+                } else {
+                    navbar.style.transform = 'translateY(0)';
+                }
+                lastScrollTop = scrollTop;
+            });
+        });
+    </script>
+</body>
+</html>
