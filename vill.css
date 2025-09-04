@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    height: 800px;
+    width: 100%;
+    background-color: rgb(126, 129, 122);
+    
+}

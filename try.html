@@ -1,0 +1,445 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Valley Village</title>
+    <style>
+        /* s */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--secondary);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                        url('https://placehold.co/1920x1080') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 2rem;
+        }
+        
+        header img {
+            max-height: 100px;
+            margin-bottom: 2rem;
+        }
+        
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+        }
+        
+        header p {
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--dark);
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--primary);
+            position: relative;
+            font-size: 2.5rem;
+        }
+        
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 4px;
+            background: var(--accent);
+            margin: 0.5rem auto;
+            border-radius: 2px;
+        }
+        
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .highlight-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .highlight-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .highlight-img img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .highlight-content {
+            padding: 1.5rem;
+        }
+        
+        .highlight-content h3 {
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        
+        .businesses {
+            background-color: var(--light);
+        }
+        
+        .business-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .business {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .business img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            border: 3px solid var(--accent);
+        }
+        
+        .events-calendar {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .event {
+            display: flex;
+            margin-bottom: 2rem;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .event-date {
+            background: var(--primary);
+            color: white;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-width: 120px;
+            font-weight: bold;
+        }
+        
+        .event-date .day {
+            font-size: 2.5rem;
+        }
+        
+        .event-date .month {
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+        
+        .event-details {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+        
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--dark);
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        
+        .form-group textarea {
+            min-height: 150px;
+        }
+        
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        footer p {
+            margin-bottom: 1rem;
+        }
+        
+        .social-links a {
+            color: white;
+            margin: 0 0.5rem;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: var(--accent);
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            
+            header p {
+                font-size: 1.2rem;
+            }
+            
+            .event {
+                flex-direction: column;
+            }
+            
+            .event-date {
+                flex-direction: row;
+                padding: 1rem;
+                justify-content: space-around;
+            }
+        }
+        .video{
+            height:100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <header>
+     <!-- <video autoplay loop muted play-inline class="video" >
+        <source src="rrrr.mp4" type="video/mp4">
+     </video> -->
+        <h1>Welcome to Green Valley Village</h1>
+        <p>A peaceful rural community nestled between rolling hills and lush forests</p>
+        <a href="#highlights" class="btn">Explore Our Village</a>
+    </header>
+    
+    <section id="highlights" class="container">
+        <h2 class="section-title">Village Highlights</h2>
+        <div class="highlights">
+            <div class="highlight-card">
+                <div class="highlight-img">
+                    <img src="https://placehold.co/600x400" alt="Sunrise over Green Valley Lake with mist rising from the water and birds flying overhead">
+                </div>
+                <div class="highlight-content">
+                    <h3>Green Valley Lake</h3>
+                    <p>Our pristine lake offers excellent fishing, boating, and picnic spots with stunning mountain views. The perfect place for family outings and peaceful reflection.</p>
+                </div>
+            </div>
+            
+            <div class="highlight-card">
+                <div class="highlight-img">
+                    <img src="https://placehold.co/600x400" alt="Historic village square with cobblestone streets, old-fashioned shop fronts, and hanging flower baskets">
+                </div>
+                <div class="highlight-content">
+                    <h3>Historic Square</h3>
+                    <p>Walk through our beautifully preserved historic square with buildings dating back to 1850. Explore unique shops, cafes, and our weekend farmers market.</p>
+                </div>
+            </div>
+            
+            <div class="highlight-card">
+                <div class="highlight-img">
+                    <img src="https://placehold.co/600x400" alt="Scenic hiking trail through dense forest with sunlight filtering through the trees">
+                </div>
+                <div class="highlight-content">
+                    <h3>Nature Trails</h3>
+                    <p>Over 20 miles of well-maintained hiking trails wind through our diverse landscape, from dense forests to open meadows filled with wildflowers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="businesses" class="container businesses">
+        <h2 class="section-title">Local Businesses</h2>
+        <div class="business-grid">
+            <div class="business">
+                <img src="https://placehold.co/200x200" alt="Exterior of Miller's Bakery with displays of fresh bread and pastries in the window">
+                <h3>Miller's Bakery</h3>
+                <p>Fresh bread & pastries</p>
+                <p>Open: 6am-4pm daily</p>
+            </div>
+            
+            <div class="business">
+                <img src="https://placehold.co/200x200" alt="Front of Valley Crafts store with handmade pottery and woven baskets on display">
+                <h3>Valley Crafts</h3>
+                <p>Handmade local goods</p>
+                <p>Open: 9am-5pm (Closed Sun)</p>
+            </div>
+            
+            <div class="business">
+                <img src="https://placehold.co/200x200" alt="Hillside Bed & Breakfast building with a wide porch and rocking chairs">
+                <h3>Hillside B&amp;B</h3>
+                <p>Cozy accommodations</p>
+                <p>Open year-round</p>
+            </div>
+            
+            <div class="business">
+                <img src="https://placehold.co/200x200" alt="Happy Trails Outfitters shop with hiking and camping gear on display">
+                <h3>Happy Trails</h3>
+                <p>Outdoor equipment</p>
+                <p>Open: 8am-6pm</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="events" class="container">
+        <h2 class="section-title">Upcoming Events</h2>
+        <div class="events-calendar">
+            <div class="event">
+                <div class="event-date">
+                    <span class="day">15</span>
+                    <span class="month">June</span>
+                </div>
+                <div class="event-details">
+                    <h3>Summer Solstice Festival</h3>
+                    <p>Join us for our annual celebration of the longest day of the year with live music, food stalls, and crafts across the village square.</p>
+                    <p>Time: 12pm-10pm</p>
+                </div>
+            </div>
+            
+            <div class="event">
+                <div class="event-date">
+                    <span class="day">22</span>
+                    <span class="month">July</span>
+                </div>
+                <div class="event-details">
+                    <h3>Farmers Market Begins</h3>
+                    <p>Our weekly farmers market returns with fresh produce, artisan foods, and handmade crafts from local vendors every Saturday morning.</p>
+                    <p>Time: 8am-1pm</p>
+                </div>
+            </div>
+            
+            <div class="event">
+                <div class="event-date">
+                    <span class="day">15</span>
+                    <span class="month">Aug</span>
+                </div>
+                <div class="event-details">
+                    <h3>Harvest Festival</h3>
+                    <p>A day of village traditions celebrating our agricultural heritage with games, competitions, and a pie-eating contest!</p>
+                    <p>Time: 10am-6pm</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="container">
+        <h2 class="section-title">Visit Us</h2>
+        <div class="contact-form">
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Green Valley Village Community</p>
+        <p>Visit our Facebook page for the latest updates</p>
+        <div class="social-links">
+            <a href="#" aria-label="Green Valley Village on Facebook">Facebook</a>
+            <a href="#" aria-label="Green Valley Village on Instagram">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>
+
+```
+
+🎨 **Generating images based on descriptions...**
+
+✅ **Images generated successfully! Here's your updated content:**
+
+`village.html`
+```html
